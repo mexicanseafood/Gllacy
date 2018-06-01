@@ -32,9 +32,14 @@ a {
 }
 
 .button {
-	font-size: 32px;
-	line-height: 44px;
-	
+	display: inline-block;
+	color: #ffffff;
+	text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
+
+	background-image: linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+	border-style: none;
+    border-radius: 25px;
+    box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
 }
 
 .main-header {
@@ -69,8 +74,13 @@ a {
 	padding: 7px 13px;
 }
 
+.user-navigation li {
+	vertical-align: middle;
+}
+
 .user-navigation a {
 	display: block;
+	position: relative;
 
 	font-size: 14px;
 	line-height: 16px;
@@ -116,6 +126,8 @@ a {
 	width: 670px;
 	margin-top: 328px;
 	margin-left: 252px;
+
+	text-align: center;
 }
 
 .slider h2 {
@@ -125,6 +137,122 @@ a {
 	font-size: 60px;
 	line-height: 60px;
 	font-weight: 700;
+	color: #ffffff;
+}
+
+.slider-button {
+	margin: 0;
+	margin-top: 30px;
+
+	padding: 9px 40px;
+
+	font-size: 32px;
+	line-height: 44px;
+	font-weight: 700;
+}
+
+.offer {
+	display: flex;
+	justify-content: space-between;
+}
+
+.offer-item {
+	display: inline-block;
+
+	box-sizing: border-box;
+	width: 560px;
+	height: 230px;
+	margin: 0;
+	margin-top: 40px;
+	padding: 20px;
+
+	color: #ffffff;
+
+	border-radius: 15px;
+}
+
+.offer-item h3 {
+	font-size: 35px;
+	line-height: 41px;
+	font-weight: 700;
+
+	margin: 0;
+	padding: 0;
+}
+
+.offer-item p {
+	font-size: 18px;
+	line-height: 22px;
+	font-weight: 700;
+
+	margin: 0;
+	margin-top: 20px;
+	padding: 0;
+}
+
+.offer-button {
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 700;
+
+	width: 165px;
+	margin: 0;
+	margin-top: 30px;
+	margin-left: 305px;
+	padding: 15px 25px;
+
+	box-sizing: content-box;
+}
+
+.offer-item:first-of-type {
+	background-image: url("../img/offer-bg-1.jpg");
+	background-repeat: no-repeat;
+}
+
+.offer-item:last-of-type {
+	background-image: url("../img/offer-bg-2.jpg");
+	background-repeat: no-repeat;
+}
+
+.hits {
+	display: flex;
+	justify-content: space-between;
+
+	min-width: 1146px;
+	margin-top: 40px;
+}
+
+.hits-item {
+	position: relative;
+
+	width: 267px;
+	margin: 0;
+	padding: 0;
+}
+
+.hits-item img {
+	border-radius: 50%;
+}
+
+.hits-item b {
+	position: absolute;
+	top: 215px;
+
+	font-size: 45px;
+	line-height: 45px;
+	font-weight: 700;
+	color: #ffffff;
+
+	text-shadow: 0px 1px 3px rgba(49, 50, 53, 0.5);
+}
+
+.hits-item p {
+	margin: 0;
+	margin-top: 10px;
+
+	font-size: 16px;
+	line-height: 22px;
+	font-weight: 500;
 	color: #ffffff;
 	text-align: center;
 }
